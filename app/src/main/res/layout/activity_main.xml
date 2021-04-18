@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/T"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE1E9"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="276dp"
+        android:text="@string/calcul_imc"
+        android:textColor="#E7ECE1"
+        android:textColorHighlight="#D17C7C"
+        android:textColorLink="#B55959"
+        android:textCursorDrawable="@drawable/abc_vector_test"
+        android:textSize="36sp"
+        app:backgroundTint="#E68BAA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="192dp"
+        android:text="@string/poids"
+        android:textColor="#DA92AA"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/poids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="poids"
+        android:inputType="number"
+        android:textColor="#BCB5B5"
+        android:textColorHighlight="#0B0A0A"
+        android:textColorLink="#171616"
+        android:textCursorDrawable="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Resultat"
+        android:layout_width="329dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="388dp"
+        android:text="Resultat:"
+        android:textColor="#CD59E1"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/taille"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/taille"
+        app:layout_constraintTop_toBottomOf="@+id/taille"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/taille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:ems="10"
+        android:hint="taille"
+        android:inputType="number"
+        android:text="taille"
+        android:textColor="#C3BFBF"
+        android:textColorHighlight="#272525"
+        android:textColorLink="#040404"
+        android:textCursorDrawable="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <TextView
+        android:layout_width="104dp"
+        android:layout_height="55dp"
+        android:text="@string/taille"
+        android:textColor="#DD94AD"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
